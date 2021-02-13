@@ -1,0 +1,84 @@
+package br.com.desafioCeviu;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ClasseDados {
+	
+	private int incicioCasa;
+	private int fimCasa;
+	private int pontoArvore_A;
+	private int pontoArvore_B;
+	//private int [] dist_Queda_M ;
+	//private int [] dist_Queda_N ;
+	Scanner enter = new Scanner(System.in);
+	
+	public void distanciaDaqueda() {
+		ArrayList<Integer> dist_Queda_M = new ArrayList< >();
+		boolean valida;
+		String menu = "";
+		
+		do {
+			System.out.println("Para inserir o valor da queda da fruta A digite 's'.");
+			System.out.println("Para sair da operação digite 'n'.");
+			menu = enter.next();
+			if( menu.equalsIgnoreCase("s")) {
+				valida = true;
+				System.out.println(" Digite o valor para a distância da queda da fruta :");
+				int valor = enter.nextInt();
+				dist_Queda_M.add(valor);
+			}
+			else {
+				valida = false;
+				System.out.println(" Erro");
+			}
+			
+		}while(valida != false);
+		
+		
+		
+		
+	}
+	
+	public int getIncicioCasa() {
+		return incicioCasa;
+	}
+	public void setIncicioCasa(int incicioCasa) {
+		this.incicioCasa = incicioCasa;
+	}
+	public int getFimCasa() {
+		return fimCasa;
+	}
+	public void setFimCasa(int fimCasa) {
+		this.fimCasa = fimCasa;
+	}
+	public int getPontoArvore_A() {
+		return pontoArvore_A;
+	}
+	public void setPontoArvore_A(int pontoArvore_A) {
+		this.pontoArvore_A = pontoArvore_A;
+	}
+	public int getPontoArvore_B() {
+		return pontoArvore_B;
+	}
+	public void setPontoArvore_B(int pontoArvore_B) {
+		this.pontoArvore_B = pontoArvore_B;
+	}
+	/*public int getDist_Queda_M() {
+		return dist_Queda_M;
+	}
+	public void setDist_Queda_M(int dist_Queda_M) {
+		this.dist_Queda_M = dist_Queda_M;
+	}
+	public int getDist_Queda_N() {
+		return dist_Queda_N;
+	}
+	public void setDist_Queda_N(int dist_Queda_N) {
+		this.dist_Queda_N = dist_Queda_N;
+	}
+	*/
+
+	
+	
+
+}

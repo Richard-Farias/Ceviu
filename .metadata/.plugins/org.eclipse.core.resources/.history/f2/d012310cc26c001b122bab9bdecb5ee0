@@ -1,0 +1,24 @@
+package br.com.desafioCeviu;
+
+import java.util.Scanner;
+
+public class ClasseMain {
+
+	public static void main(String[] args) {
+		Scanner enter = new Scanner(System.in);
+		ClasseDados inicio = new ClasseDados();
+		
+		System.out.println("Digite início da casa:");
+		inicio.setIncicioCasa(enter.nextInt());
+		System.out.println("Digite fim da casa:");
+		inicio.setFimCasa(enter.nextInt());
+		
+		
+		
+		System.out.println(inicio.getIncicioCasa());
+		System.out.println(inicio.getFimCasa());
+		
+
+	}
+
+}

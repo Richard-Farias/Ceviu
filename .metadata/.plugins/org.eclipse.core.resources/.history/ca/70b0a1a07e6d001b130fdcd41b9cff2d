@@ -1,0 +1,38 @@
+package br.com.desafioCeviu;
+
+//import java.util.Scanner;
+
+public class ClasseMain {
+
+	public static void main(String[] args) {
+		//Scanner enter = new Scanner(System.in);
+		ClasseDados dados = new ClasseDados();
+		
+
+		dados.entrarComDados();
+		dados.receberDistanciasDe_M();
+		dados.receberDistanciasDe_N();
+		//dados.calcularQuantidadeFrutasNaCasa();
+		//dados.calcularQuantidadeLaranjaNaCasa();
+		dados.calcularQuantidadeMacaNaCasa();
+		
+		
+		/*System.out.println("Digite início da casa:");
+		dados.setIncicioCasa(enter.nextInt());
+		System.out.println("Digite fim da casa:");
+		dados.setFimCasa(enter.nextInt());
+		
+		System.out.println("Digite o ponto da árvore A:");
+		dados.setDist_Queda_M(enter.nextInt());
+		System.out.println("Digite o ponto da árvore B:");
+		dados.setDist_Queda_N(enter.nextInt());
+		
+		
+		System.out.println(dados.getIncicioCasa() + " " + dados.getFimCasa());
+		
+			*/
+		
+	
+	}
+
+}

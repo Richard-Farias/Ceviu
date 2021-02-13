@@ -1,0 +1,26 @@
+package br.com.desafioCeviu;
+
+//import java.util.Scanner;
+
+public class ClasseMain {
+
+	public static void main(String[] args) {
+		//Scanner enter = new Scanner(System.in);
+		ClasseDados dados = new ClasseDados();
+		
+        System.out.println("========== DESAFIO CEVIU ==========" + " \n");
+        System.out.println("[Dados Iniciais]" + " \n");
+        
+        dados.validarDadosInicioCasa();
+        dados.validarDadosFimCasa();
+        dados.validarDadosPontoArvoreA();
+        dados.validarDadosPontoArvoreB();
+		dados.receberDistanciasDe_M();
+		
+		//dados.receberDistanciasDe_N();
+		//dados.calcularQuantidadeMacaNaCasa();
+		
+	
+	}
+
+}

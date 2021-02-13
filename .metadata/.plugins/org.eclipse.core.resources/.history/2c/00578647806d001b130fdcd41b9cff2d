@@ -1,0 +1,20 @@
+package br.com.desafioCeviu;
+
+//import java.util.Scanner;
+
+public class ClasseMain {
+
+	public static void main(String[] args) {
+		//Scanner enter = new Scanner(System.in);
+		ClasseDados dados = new ClasseDados();
+		
+
+		dados.entrarComDados();
+		dados.receberDistanciasDe_M();
+		dados.receberDistanciasDe_N();
+		dados.calcularQuantidadeMacaNaCasa();
+		
+	
+	}
+
+}

@@ -1,0 +1,109 @@
+package br.com.desafioCeviu;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ClasseDados {
+	
+	private int inicioCasa;
+	private int fimCasa;
+	private int pontoArvoreA;
+	private int pontoArvoreB;
+	private int calculoA;
+	private int quantidadeElementosNaCasa = 0;
+	
+	Scanner enter = new Scanner(System.in);
+	
+	ArrayList<Integer> dist_Queda_M = new ArrayList< >();
+	
+	public void entrarComDados() {
+		//System.out.println("Digite início da casa:");
+		//inicioCasa = enter.nextInt();
+		//System.out.println("Digite fim da casa:");
+		//fimCasa = enter.nextInt();
+		System.out.println("Digite o ponto da árvore A:");
+		pontoArvoreA = enter.nextInt();
+		//System.out.println("Digite o ponto da árvore B:");
+		///pontoArvore_B = enter.nextInt();
+		
+	}
+	
+	public void tese() {
+		
+		System.out.println(inicioCasa);
+		System.out.println(dist_Queda_M.get(0) + inicioCasa);
+	}
+	
+	
+	public void distanciaDaQueda() {
+		boolean valida;
+		String menu = "";
+		do {
+			System.out.println("Para inserir o valor da queda da fruta A digite 's'.");
+			System.out.println(" ");
+			System.out.println("Para sair da operação digite 'n'.");
+			menu = enter.next();
+			// colocar um if para caso seja digitado valor errado
+			if( menu.equalsIgnoreCase("s")) {
+				valida = true;
+				System.out.println(" Digite o valor para a distância da queda da fruta ");
+				int valor = enter.nextInt();
+				dist_Queda_M.add(valor);
+			}
+			else {
+				valida = false;
+				System.out.println("Dados gravados" + dist_Queda_M);
+			}
+			
+		}while(valida != false);
+		
+	}
+	
+	
+	public void calcular() {
+		for(int valor : dist_Queda_M) {
+			calculoA = pontoArvoreA + valor;
+			if(calculoA <= inicioCasa && calculoA <= fimCasa) {
+				
+			}
+			
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	public int getInicioCasa() {
+		return inicioCasa;
+	}
+	public void setInicioCasa(int incicioCasa) {
+		this.inicioCasa = incicioCasa;
+	}
+	public int getFimCasa() {
+		return fimCasa;
+	}
+	public void setFimCasa(int fimCasa) {
+		this.fimCasa = fimCasa;
+	}
+	public int getPontoArvore_A() {
+		return pontoArvoreA;
+	}
+	public void setPontoArvore_A(int pontoArvore_A) {
+		this.pontoArvoreA = pontoArvore_A;
+	}
+	public int getPontoArvore_B() {
+		return pontoArvoreB;
+	}
+	public void setPontoArvore_B(int pontoArvore_B) {
+		this.pontoArvoreB = pontoArvore_B;
+	}
+	
+	
+
+}

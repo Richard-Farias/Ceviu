@@ -1,0 +1,59 @@
+package br.com.desafioCeviu;
+
+
+
+public class ClasseDados {
+	
+	private int incicioCasa;
+	private int fimCasa;
+	private int pontoArvore_A;
+	private int pontoArvore_B;
+	private int dist_Queda_M;
+	private int dist_Queda_N;
+	
+	Scanner enter = new Scanner(System.in);
+
+	
+	
+	public int getIncicioCasa() {
+		return incicioCasa;
+	}
+	public void setIncicioCasa(int incicioCasa) {
+		this.incicioCasa = incicioCasa;
+	}
+	public int getFimCasa() {
+		return fimCasa;
+	}
+	public void setFimCasa(int fimCasa) {
+		this.fimCasa = fimCasa;
+	}
+	public int getPontoArvore_A() {
+		return pontoArvore_A;
+	}
+	public void setPontoArvore_A(int pontoArvore_A) {
+		this.pontoArvore_A = pontoArvore_A;
+	}
+	public int getPontoArvore_B() {
+		return pontoArvore_B;
+	}
+	public void setPontoArvore_B(int pontoArvore_B) {
+		this.pontoArvore_B = pontoArvore_B;
+	}
+	public int getDist_Queda_M() {
+		return dist_Queda_M;
+	}
+	public void setDist_Queda_M(int dist_Queda_M) {
+		this.dist_Queda_M = dist_Queda_M;
+	}
+	public int getDist_Queda_N() {
+		return dist_Queda_N;
+	}
+	public void setDist_Queda_N(int dist_Queda_N) {
+		this.dist_Queda_N = dist_Queda_N;
+	}
+	
+
+	
+	
+
+}

@@ -1,0 +1,60 @@
+package br.com.desafioCeviu;
+
+public class ClasseDados {
+	
+	private int incicioCasa;
+	private int fimCasa;
+	private int pontoArvore_a;
+	private int pontoArvore_b;
+	private int dist_queda_m;
+	private int dist_queda_n;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	// Início getters and Setters
+	public int getIncicioCasa() {
+		return incicioCasa;
+	}
+	public void setIncicioCasa(int incicioCasa) {
+		this.incicioCasa = incicioCasa;
+	}
+	public int getFimCasa() {
+		return fimCasa;
+	}
+	public void setFimCasa(int fimCasa) {
+		this.fimCasa = fimCasa;
+	}
+	public int getPontoArvore_a() {
+		return pontoArvore_a;
+	}
+	public void setPontoArvore_a(int pontoArvore_a) {
+		this.pontoArvore_a = pontoArvore_a;
+	}
+	public int getPontoArvore_b() {
+		return pontoArvore_b;
+	}
+	public void setPontoArvore_b(int pontoArvore_b) {
+		this.pontoArvore_b = pontoArvore_b;
+	}
+	public int getDist_queda_m() {
+		return dist_queda_m;
+	}
+	public void setDist_queda_m(int dist_queda_m) {
+		this.dist_queda_m = dist_queda_m;
+	}
+	public int getDist_queda_n() {
+		return dist_queda_n;
+	}
+	public void setDist_queda_n(int dist_queda_n) {
+		this.dist_queda_n = dist_queda_n;
+	}
+	
+	
+
+}

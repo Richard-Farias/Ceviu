@@ -1,0 +1,133 @@
+package br.com.desafioCeviu;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ClasseDados {
+
+	private int inicioCasa;
+	private int fimCasa;
+	private int pontoArvoreA;
+	private int pontoArvoreB;
+	private int calculoA;
+	//private int calculoB;
+	private int quantidadeMacaNaCasa = 0;
+	//private int quantidadeLaranjaNaCasa = 0;
+
+	Scanner enter = new Scanner(System.in);
+
+	ArrayList<Integer> distanciasM = new ArrayList<>();
+	//ArrayList<Integer> distanciasN = new ArrayList<>();
+
+	public void entrarComDados() {
+		System.out.println("Digite início da casa:");
+		inicioCasa = enter.nextInt();
+		System.out.println("Digite fim da casa:");
+		fimCasa = enter.nextInt();
+		System.out.println("Digite o ponto da árvore A:");
+		pontoArvoreA = enter.nextInt();
+		//System.out.println("Digite o ponto da árvore B:");
+		//pontoArvoreB = enter.nextInt();
+
+	}
+
+	public void receberDistanciasDe_M() {
+		boolean valida;
+		String menu = "";
+		do {
+			System.out.println("Para inserir o valor da queda da fruta A digite 's'.");
+			System.out.println(" ");
+			System.out.println("Para sair da operação digite 'n'.");
+			menu = enter.next();
+			// colocar um if para caso seja digitado valor errado
+			if (menu.equalsIgnoreCase("s")) {
+				valida = true;
+				System.out.println(" Digite o valor para a distância da queda da fruta ");
+				int valor = enter.nextInt();
+				distanciasM.add(valor);
+			} else {
+				valida = false;
+				System.out.println("Distâncias das frutas que caíram:" + distanciasM);
+			}
+
+		} while (valida != false);
+
+	}
+
+	/*public void receberDistanciasDe_N() {
+		boolean validar;
+		String menu = "";
+		do {
+			System.out.println("Para inserir o valor da queda da fruta B digite 's'.");
+			System.out.println(" ");
+			System.out.println("Para sair da operação digite 'n'.");
+			menu = enter.next();
+			// colocar um if para caso seja digitado valor errado
+			if (menu.equalsIgnoreCase("s")) {
+				validar = true;
+				System.out.println(" Digite o valor para a distância da queda da fruta ");
+				int valor = enter.nextInt();
+				distanciasN.add(valor);
+			} else {
+				validar = false;
+				System.out.println("Distâncias que as laranjas caíram:" + distanciasN);
+			}
+
+		} while (validar != false);
+
+	}*/
+
+	public void calcularQuantidadeFrutasNaCasa() {
+		for (int valorM : distanciasM) {
+			calculoA = pontoArvoreA + valorM;
+			if (calculoA <= inicioCasa && calculoA <= fimCasa) {
+				quantidadeMacaNaCasa += 1;
+				System.out.println(calculoA);
+				System.out.println("Quantidade de Maça na Casa:" + quantidadeMacaNaCasa);
+			}
+
+		}
+		/*for (int valorN : distanciasN) {
+			calculoB = pontoArvoreB + valorN;
+			if (calculoB <= inicioCasa && calculoB <= fimCasa) {
+				quantidadeLaranjaNaCasa += 1;
+			}
+		}
+
+		// System.out.println("Quantidade de Maça na Casa:" + quantidadeMacaNaCasa);
+		System.out.println("Quantidade de Laranja na Casa:" + quantidadeLaranjaNaCasa);*/
+	}
+
+	public int getInicioCasa() {
+		return inicioCasa;
+	}
+
+	public void setInicioCasa(int incicioCasa) {
+		this.inicioCasa = incicioCasa;
+	}
+
+	public int getFimCasa() {
+		return fimCasa;
+	}
+
+	public void setFimCasa(int fimCasa) {
+		this.fimCasa = fimCasa;
+	}
+
+	public int getPontoArvore_A() {
+		return pontoArvoreA;
+	}
+
+	public void setPontoArvore_A(int pontoArvore_A) {
+		this.pontoArvoreA = pontoArvore_A;
+	}
+
+	public int getPontoArvore_B() {
+		return pontoArvoreB;
+	}
+
+	public void setPontoArvore_B(int pontoArvore_B) {
+		this.pontoArvoreB = pontoArvore_B;
+	}
+
+}
